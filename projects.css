@@ -1,0 +1,126 @@
+/* projects section */
+
+#projects {
+  text-align: center;
+  font-size: 90px;
+  padding: 15px;
+  margin: 50px 0 30px 0;
+  color: white;
+}
+
+.display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.orange {
+  background-color: rgb(195, 160, 96);
+}
+
+.blue {
+  background-color: rgb(138, 138, 189);
+}
+
+.green {
+  background-color: rgb(88, 204, 88);
+}
+
+.project-display {
+  /* border: 3px solid green; */
+  display: grid;
+  row-gap: 30px;
+  width: 100%;
+  padding: 0 20px 40px 20px;
+}
+
+.row-elements {
+  border: 2px solid gray;
+  width: 80%;
+  height: 450px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgb(78, 74, 74);
+  margin: 0 auto;
+}
+
+/* image div properties */
+
+.row-elements .image {
+  width: 100%;
+  height: 65%;
+  /* border: 2px solid blue; */
+}
+
+.row-elements .image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* about div properties */
+
+.row-elements .about {
+  height: 35%;
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.tech-stack span {
+  border: 1px solid black;
+  padding: 3px 5px;
+  border-radius: 2px;
+  margin: 5px;
+}
+
+.span-html {
+  background-color: red;
+  color: white;
+}
+
+.span-css {
+  background-color: rgb(71, 122, 176);
+  color: white;
+}
+
+.span-js {
+  background-color: rgb(221, 221, 12);
+  color: rgb(8, 8, 8);
+}
+
+.span-react {
+  background-color: green;
+  color: white;
+}
+
+.about .code-buttons a {
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: gray;
+  color: white;
+  margin: 0 10px;
+  padding: 10px 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .project-display {
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and (max-width: 870px) and (min-width: 601px) {
+  .project-display {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (min-width: 871px) {
+  .project-display {
+    grid-template-columns: auto auto auto;
+  }
+}

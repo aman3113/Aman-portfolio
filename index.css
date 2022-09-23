@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #4e4e4e;
+  --span-color: #4affa5;
+  --para-color: #cacaca;
+}
+
+body {
+  background-color: black;
+  max-width: 100vw;
+}
+
+/* header items */
+
+header {
+  height: 80vh;
+  width: 100%;
+  background-image: radial-gradient(
+    circle at 10% 20%,
+    rgb(0, 0, 0) 0%,
+    rgb(64, 64, 64) 90.2%
+  );
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+nav {
+  height: 20%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+  position: relative;
+  /* border: 3px solid red; */
+  font-size: 1.5rem;
+}
+
+.logo,
+.menus {
+  color: var(--span-color);
+}
+
+.logo span {
+  margin-left: 20px;
+  color: var(--para-color);
+}
+li {
+  list-style: none;
+}
+
+.menus ul {
+  display: flex;
+}
+
+.menus a {
+  color: var(--primary-color);
+  text-decoration: none;
+  margin: 0 10px 0 10px;
+}
+
+.about-section {
+  height: 80%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  /* border: 2px solid white; */
+}
+
+.image-section {
+  /* border: 2px solid white; */
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.image-section img {
+  /* border: 1px solid yellow; */
+  width: 70%;
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+}
+
+.contact-section {
+  padding-top: 10%;
+  /* padding-left: 20%; */
+  text-align: center;
+}
+
+.contact-section p {
+  color: var(--para-color);
+  font-size: 2.5rem;
+}
+
+.contact-section span {
+  color: var(--span-color);
+  font-size: 4rem;
+}
+
+.contact-section a i {
+  margin-top: 40px;
+  margin-left: 30px;
+  font-size: 50px;
+  color: var(--para-color);
+}
+
+/* technologies */
+
+.technologies {
+  color: var(--primary-color);
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.technologies ol {
+  list-style: none;
+  display: flex;
+}
+
+.technologies ol li {
+  margin: 20px 20px 10px 10px;
+  font-size: 1.5rem;
+}
