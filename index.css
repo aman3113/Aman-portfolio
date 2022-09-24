@@ -22,7 +22,6 @@ body {
 /* header items */
 
 header {
-  height: 80vh;
   width: 100%;
   background-image: radial-gradient(
     circle at 10% 20%,
@@ -70,28 +69,17 @@ li {
 .about-section {
   height: 80%;
   display: grid;
-  grid-template-columns: 40% 60%;
   /* border: 2px solid white; */
 }
 
 .image-section {
-  /* border: 2px solid white; */
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-.image-section img {
-  /* border: 1px solid yellow; */
-  width: 70%;
-  position: absolute;
-  right: 20px;
-  bottom: 0;
-}
-
 .contact-section {
   padding-top: 10%;
-  /* padding-left: 20%; */
   text-align: center;
 }
 
@@ -116,19 +104,110 @@ li {
 
 .technologies {
   color: var(--primary-color);
-  height: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.technologies ol {
-  list-style: none;
-  display: flex;
+.horizontal {
+  border: 2px solid white;
+  width: 100%;
+  border-radius: 100%;
 }
 
-.technologies ol li {
-  margin: 20px 20px 10px 10px;
-  font-size: 1.5rem;
+footer {
+  text-align: center;
+}
+footer a i {
+  margin: 20px 0 20px 30px;
+  font-size: 50px;
+  color: var(--para-color);
+}
+
+@media only screen and (min-width: 850px) {
+  .about-section {
+    grid-template-columns: 40% 60%;
+  }
+  header {
+    height: 80vh;
+  }
+  .technologies {
+    height: 20vh;
+  }
+  .image-section img {
+    /* border: 1px solid yellow; */
+    width: 70%;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+  }
+  .contact-section p {
+    font-size: 2.5rem;
+  }
+
+  .contact-section span {
+    font-size: 4rem;
+  }
+
+  .contact-section a i {
+    font-size: 50px;
+  }
+
+  .technologies ol {
+    list-style: none;
+    display: flex;
+  }
+  .technologies ol li {
+    margin: 20px 20px 10px 10px;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  nav {
+    flex-direction: column;
+    position: relative;
+  }
+  .menus {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+  }
+  .about-section {
+    grid-template-columns: auto;
+  }
+  header {
+    height: auto;
+  }
+  .image-section img {
+    width: 40%;
+  }
+  .image-section {
+    text-align: center;
+  }
+  .contact-section p {
+    font-size: 2rem;
+  }
+
+  .contact-section span {
+    font-size: 3rem;
+  }
+
+  .contact-section a i {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .technologies ol {
+    list-style: none;
+    display: flex;
+  }
+  .technologies h2 {
+    margin-top: 20px;
+  }
+  .technologies ol li {
+    margin: 20px 20px 10px 10px;
+    font-size: 1rem;
+  }
 }
