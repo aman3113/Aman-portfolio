@@ -231,6 +231,27 @@ let details = [
     url1: "https://github.com/aman3113/stock-profit-loss-mark14",
     url2: "https://basic-profit-loss-calculator.netlify.app",
   },
+  {
+    background: "orange",
+    image: "images/color scheme generator.png",
+    heading: "Color Scheme Generator",
+    tech: [
+      {
+        span: "html",
+        used: "HTML",
+      },
+      {
+        span: "css",
+        used: "CSS",
+      },
+      {
+        span: "js",
+        used: "Javascript",
+      },
+    ],
+    url1: "https://github.com/aman3113/Color-scheme-generator",
+    url2: "https://color-scheme-generator-aman.netlify.app/",
+  },
 ];
 let html = "";
 
