@@ -62,7 +62,7 @@ li {
 .menus a {
   color: var(--primary-color);
   text-decoration: none;
-  margin: 0 10px 0 10px;
+  margin: 0 20px 0 10px;
 }
 
 .about-section {
